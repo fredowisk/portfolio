@@ -1,0 +1,66 @@
+.light {
+  background-color: var(--white);
+  button {
+    color: var(--black-700);
+  }
+
+  button:first-of-type {
+    background-color: var(--white-300);
+  }
+
+  button + button {
+    background-color: transparent;
+  }
+}
+
+.dark {
+  background-color: var(--blue-900);
+
+  button {
+    color: var(--gray-200);
+  }
+
+  button:first-of-type {
+    background-color: var(--blue-1000);
+  }
+
+  button + button {
+    background-color: transparent;
+  }
+}
+
+.container {
+  max-width: 47.5rem;
+  max-height: 6.875rem;
+
+  display: flex;
+
+  margin-top: 5.375rem;
+
+  border-radius: 1.25rem;
+
+  transition: ease 0.2s;
+
+  @media (max-width: 600px) {
+    max-width: 31.875rem;
+  }
+
+  button {
+    width: 21.966rem;
+    height: 5rem;
+
+    border-radius: 0.625rem;
+
+    margin: 0.938rem 1.484rem;
+
+    font-size: 1.375rem;
+    line-height: 2.063rem;
+    text-align: center;
+
+    transition: ease 0.2s;
+  }
+
+  button:hover {
+    opacity: 80%;
+  }
+}

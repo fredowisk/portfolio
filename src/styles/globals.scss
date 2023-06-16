@@ -1,0 +1,81 @@
+:root {
+  --gray-200: #a3abb2;
+  --gray-300: #575757;
+  --gray-500: #3d3d3d;
+  --gray-600: #3a3a3a;
+
+  --black: #000000;
+  --black-700: #19191b;
+
+  --white: #ffffff;
+  --white-50: #f1f2f4;
+  --white-100: #e7e7e7;
+  --white-200: #e9ebec;
+  --white-300: #d7d7d7;
+
+  --blue-500: #3e64aa;
+  --blue-900: #171f26;
+  --blue-1000: #0c151d;
+
+  --yellow: #ffe071;
+  --yellow-200: #fbd144;
+  --yellow-500: #f7d039;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 98.75%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+body,
+input,
+textarea,
+select,
+footer,
+button {
+  font: 500 1rem "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+svg {
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+svg:hover {
+  opacity: 80%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
