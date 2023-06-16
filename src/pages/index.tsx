@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetServerSideProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Head from "next/head";
@@ -18,9 +18,11 @@ import { TranslateContext } from "@/contexts/TranslateContext";
 
 import styles from "./home.module.scss";
 
-export default function Home() {
+export default function Home({ locale }: { locale: string }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { language, toggleLanguage, translate } = useContext(TranslateContext);
+
+  if (locale === language.abbreviation) toggleLanguage();
 
   return (
     <div className={`${styles.container} ${styles[theme]}`}>
@@ -60,9 +62,14 @@ export default function Home() {
   );
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? "en", ["common"])),
-  },
-  revalidate: 60 * 60 * 24 * 30,
-});
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+  const currentLocale = locale ?? "en";
+
+  return {
+    props: {
+      ...(await serverSideTranslations(currentLocale, ["common"])),
+      currentLocale,
+      locale,
+    },
+  };
+};
