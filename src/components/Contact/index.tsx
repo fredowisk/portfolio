@@ -12,7 +12,7 @@ export function Contact() {
   return (
     <div className={`${styles.container} ${styles[theme]}`}>
       <a
-        href={`./public/cv-${
+        href={`/cv-${
           language.abbreviation === "en" ? "pt" : "en"
         }.pdf`}
         download
