@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { FiLink2 } from "react-icons/fi";
 
 import styles from "./styles.module.scss";
