@@ -28,15 +28,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5.625rem;
-
-  @media (max-width: 600px) {
-    padding: 2.5rem 0;
-    column-gap: 2.625rem;
-  }
-
-  @media (max-width: 350px) {
-    column-gap: 0;
-  }
 }
 
 .fact {

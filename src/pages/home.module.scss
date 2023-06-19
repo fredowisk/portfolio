@@ -31,14 +31,14 @@
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   transition: ease 0.2s;
 }
 
 .header {
   position: relative;
-  max-width: 67.5rem;
+  max-width: 65.625rem;
   max-height: 3.75rem;
 
   display: flex;
@@ -48,15 +48,9 @@
 
   margin: 0 auto;
 
-  @media (max-width: 760px) {
-    max-width: 43.75rem;
-  }
+  
 
   @media (max-width: 600px) {
-    max-width: 30.25rem;
-  }
-
-  @media (max-width: 350px) {
     max-width: 80%;
   }
 

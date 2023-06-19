@@ -34,14 +34,6 @@
 
   margin-top: 2.938rem;
 
-  @media (max-width: 600px) {
-    width: 31.875rem;
-  }
-
-  @media (max-width: 350px) {
-    max-width: 90%;
-  }
-
   a {
     display: flex;
     justify-content: center;

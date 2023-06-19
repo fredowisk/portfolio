@@ -28,27 +28,51 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 299px) {
   html {
-    font-size: 87.5%;
+    font-size: 25%;
+  }
+}
+
+@media (min-width: 300px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media (min-width: 400px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media (min-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 56.25%;
   }
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 87.5%;
+    font-size: 68.75%;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   html {
-    font-size: 98.75%;
+    font-size: 81.25%;
   }
 }
 
 @media (min-width: 1200px) {
   html {
-    font-size: 150%;
+    font-size: 110%;
   }
 }
 
