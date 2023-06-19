@@ -45,6 +45,10 @@
     max-width: 31.875rem;
   }
 
+  @media (max-width: 350px) {
+    max-width: 90%;
+  }
+
   button {
     width: 21.966rem;
     height: 5rem;

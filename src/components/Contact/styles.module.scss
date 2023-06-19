@@ -38,6 +38,10 @@
     width: 31.875rem;
   }
 
+  @media (max-width: 350px) {
+    max-width: 90%;
+  }
+
   a {
     display: flex;
     justify-content: center;
