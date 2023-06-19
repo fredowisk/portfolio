@@ -1,31 +1,40 @@
 .light {
-  background-color: var(--white);
-  button {
-    color: var(--black-700);
+  .container {
+    background-color: var(--white);
+
+    button {
+      color: var(--gray-600);
+    }
+
+    .selected {
+      background-color: var(--white-300);
+    }
   }
 
-  button:first-of-type {
-    background-color: var(--white-300);
-  }
-
-  button + button {
-    background-color: transparent;
+  .skillsContainer {
+    span {
+      color: var(--black-700);
+    }
   }
 }
 
 .dark {
-  background-color: var(--blue-900);
+  .container {
+    background-color: var(--blue-900);
 
-  button {
-    color: var(--gray-200);
+    button {
+      color: var(--gray-200);
+    }
+
+    .selected {
+      background-color: var(--blue-1000);
+    }
   }
 
-  button:first-of-type {
-    background-color: var(--blue-1000);
-  }
-
-  button + button {
-    background-color: transparent;
+  .skillsContainer {
+    span {
+      color: var(--white-50);
+    }
   }
 }
 
@@ -53,19 +62,92 @@
     line-height: 2.063rem;
     text-align: center;
 
-    transition: ease 0.2s;
+    background-color: transparent;
 
+    transition: ease 0.2s;
   }
 
   button:hover {
-    opacity: 80%;
+    opacity: 60%;
   }
 
   @media (max-width: 600px) {
     max-width: 42.625rem;
 
     button {
-      font-size: 1.875rem
+      font-size: 1.875rem;
     }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5.375rem;
+
+  max-width: 47.313rem;
+
+  transition: ease 0.2s;
+}
+
+.imagesContainer {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 3rem 2rem;
+
+
+  border-radius: 1.25rem;
+
+  img {
+    width: 22.625rem;
+    height: 14.125rem;
+
+    object-fit: cover;
+
+    filter: grayscale(50%) blur(0.5px);
+
+    border-radius: 0.938rem;
+  }
+
+  img:hover {
+    filter: none;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+
+    img {
+      width: 40.625rem;
+      height: 20rem;
+    }
+  }
+}
+
+.skillsContainer {
+  display: grid;
+
+  gap: 3rem 2rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  span {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  ul {
+    padding-top: 1rem;
+  }
+
+  li {
+    font-size: 2rem;
+    line-height: -2rem;
+    list-style: none;
   }
 }
