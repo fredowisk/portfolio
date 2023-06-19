@@ -28,25 +28,25 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 299px) {
+@media (max-width: 249px) {
   html {
-    font-size: 25%;
+    font-size: 31.25%;;
+  }
+}
+
+@media (min-width: 250px) {
+  html {
+    font-size: 37.5%;;
   }
 }
 
 @media (min-width: 300px) {
   html {
-    font-size: 37.5%;
-  }
-}
-
-@media (min-width: 400px) {
-  html {
     font-size: 43.75%;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   html {
     font-size: 50%;
   }

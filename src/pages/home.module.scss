@@ -48,8 +48,6 @@
 
   margin: 0 auto;
 
-  
-
   @media (max-width: 600px) {
     max-width: 80%;
   }
@@ -67,6 +65,16 @@
     svg {
       width: 2.875rem;
       height: 2.875rem;
+    }
+
+    @media (max-width: 600px) {
+      width: 4.75rem;
+      height: 4.75rem;
+
+      svg {
+        width: 3.875rem;
+        height: 3.875rem;
+      }
     }
   }
 
@@ -103,9 +111,9 @@
 .contentContainer {
   max-width: 70rem;
 
-  margin: 0 auto;
+  margin: 1rem auto 0;
 
-  padding: 3.75rem 0;
+  padding: 4.375rem 0;
 
   display: flex;
   align-items: center;

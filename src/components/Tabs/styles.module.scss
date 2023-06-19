@@ -54,9 +54,18 @@
     text-align: center;
 
     transition: ease 0.2s;
+
   }
 
   button:hover {
     opacity: 80%;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 42.625rem;
+
+    button {
+      font-size: 1.875rem
+    }
   }
 }

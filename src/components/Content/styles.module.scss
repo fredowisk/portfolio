@@ -12,11 +12,6 @@
 
   gap: 3rem 2rem;
 
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
-
   img {
     width: 22.625rem;
     height: 14.125rem;
@@ -31,6 +26,17 @@
   img:hover {
     filter: none;
   }
+
+  @media (max-width: 600px) {
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+
+    img {
+      width: 40.625rem;
+      height: 20rem;
+    }
+  }
 }
 
 .imageContainer {
@@ -38,6 +44,11 @@
 
   max-width: 22.625rem;
   max-height: 14.125rem;
+
+  @media (max-width: 600px) {
+    max-width: 40.625rem;
+    max-height: 20rem;
+  }
 }
 
 .imageDescription {
@@ -77,6 +88,19 @@
   }
 
   transition: ease 0.2s;
+
+  @media (max-width: 600px) {
+    span {
+      font-size: 2.375rem;
+      line-height: 2.813rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.875rem;
+      line-height: 1.688rem;
+    }
+  }
 }
 
 .imageContainer:hover .imageDescription {
